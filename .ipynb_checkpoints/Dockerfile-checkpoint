@@ -1,0 +1,11 @@
+
+# base image
+FROM ubuntu:18.04
+
+# run apt update
+RUN apt update
+
+# install openjdk
+RUN apt -f -y install ssh rsync wget openjdk-8-jdk
+
+CMD ["/bin/bash"]

@@ -1,0 +1,10 @@
+.DS_Store
+notebooks/.ipynb_checkpoints
+notebooks/__pycache__
+notebooks/.DS_Store
+datasets/*
+!datasets/.gitkeep
+pkgs/*
+!pkgs/.gitkeep
+src/*
+!src/.gitkeep
