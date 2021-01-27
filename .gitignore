@@ -1,4 +1,5 @@
 .DS_Store
+.ipynb_checkpoints
 notebooks/.ipynb_checkpoints
 notebooks/__pycache__
 notebooks/.DS_Store
