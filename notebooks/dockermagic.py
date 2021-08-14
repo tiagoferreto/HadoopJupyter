@@ -1,11 +1,16 @@
 import tempfile
 import os
+import platform
 
 # @register_cell_magic
 def dockerexec(args, cell):
-    tmpf, filename = tempfile.mkstemp()
+    cell = cell.split('\n',1)[1]
+    tmpf, filename = tempfile.mkstemp(dir='.')
     os.write(tmpf, bytes(cell, "utf8"))
-    get_ipython().system("docker exec -i {0} bash < {1}".format(args, filename))
+    if platform.system() == "Windows" :
+        get_ipython().run_cell_magic("bash","","docker exec -i {0} bash < {1}".format(args, os.path.basename(filename)))
+    else :
+        get_ipython().system("docker exec -i {0} bash < {1}".format(args, filename))
     os.close(tmpf)
     
 def load_ipython_extension(ipython):
