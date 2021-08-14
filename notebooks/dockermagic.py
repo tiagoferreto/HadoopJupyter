@@ -12,6 +12,7 @@ def dockerexec(args, cell):
     else :
         get_ipython().system("docker exec -i {0} bash < {1}".format(args, filename))
     os.close(tmpf)
+    os.remove(os.path.basename(filename))
     
 def load_ipython_extension(ipython):
     """This function is called when the extension is
