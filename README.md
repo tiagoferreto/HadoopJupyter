@@ -5,10 +5,9 @@
 
 ---
 
-Requisitos do computador
+### Requisitos do computador
 
 - Suporte a virtualização habilitado na BIOS do computador (Hardware assisted virtualization)
-
   - Depende da máquina, modelo, processador e placa-mãe
   - Processador Intel - Intel Virtualization Technology (Intel-VT-X)
   - Processador AMD - Secure Virtual Machine Mode (AMD-V)
@@ -16,12 +15,9 @@ Requisitos do computador
     - https://www.youtube.com/watch?v=rzCe4Tolzgs
     - https://www.youtube.com/watch?v=QTTGA4u7azE
     - https://www.thefastcode.com/pt-eur/article/how-to-enable-intel-vt-x-in-your-computer-s-bios-or-uefi-firmware
-
 - Mínimo de 16GBytes de memória RAM
 
-  
-
-Requisitos usando Linux
+### Requisitos usando Linux
 
 - Testado em Ubuntu 18.04 e Ubuntu 20.04
 - Instalação dos softwares
@@ -34,9 +30,7 @@ Requisitos usando Linux
     - https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html
     - https://jupyter.org/install
 
-
-
-Requisitos usando Mac OS
+### Requisitos usando Mac OS
 
 - Testado em Big Sur
 - Instalação dos softwares
@@ -51,9 +45,7 @@ Requisitos usando Mac OS
     - https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html
     - https://jupyter.org/install
 
-
-
-Requisitos usando Windows
+### Requisitos usando Windows
 
 - Testado em Windows 10
 - Habilitar suporte a WSL2
